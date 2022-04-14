@@ -7,12 +7,17 @@
 
 #### 1. 使用service principal in Azure
 Azure CLI
+```markdown
+
 ```Azure CLI
 az ad sp create-for-rbac --name "myApp" --role contributor \
 --scopes /subscriptions/<subscription-id>/resourceGroups/<group-name>/providers/Microsoft.Web/sites/<app-name> \
 --sdk-auth
 ```
+```
+
 > output(下方json全部貼到secrets中)
+
 ```json
 {
   "clientId": "bf5984d0-xxxx-xxxx-xxxx-1e8fad657f58",
