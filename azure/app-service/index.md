@@ -7,7 +7,7 @@
 
 #### 1. 使用service principal in Azure
 Azure CLI
-```markdown
+```
 az ad sp create-for-rbac --name "myApp" --role contributor \
 --scopes /subscriptions/<subscription-id>/resourceGroups/<group-name>/providers/Microsoft.Web/sites/<app-name> \
 --sdk-auth
@@ -65,7 +65,9 @@ jobs:
 #### 2. 使用 publish-profile
 > 下載 publish-profile(文件內容加到全部貼到secrets中)
 
+```markdown
 ![image][https://github.com/yunien/yunien.github.io/blob/main/azure/app-service/getPublishProfile.png]
+```
 
 > gitAction workflow寫法yaml, azure/webapps-deploy@v2 內加上 publish-profile
 ```yaml
