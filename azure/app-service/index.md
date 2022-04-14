@@ -31,7 +31,7 @@ az ad sp create-for-rbac --name "myApp" --role contributor \
 ```
 
 > gitAction workflow寫法yaml, 加上login & logout
-```yaml
+```yml
 # 設定
 name: Workflow to Azure Web App
 
@@ -65,7 +65,7 @@ jobs:
 #### 2. 使用 publish-profile
 > 下載 publish-profile(文件內容加到全部貼到secrets中)
 
-![image](https://github.com/yunien/yunien.github.io/blob/main/azure/app-service/getPublishProfile.png)
+![image](./getPublishProfile.png)
 
 > gitAction workflow寫法yaml, azure/webapps-deploy@v2 內加上 publish-profile
 ```yaml
