@@ -8,12 +8,9 @@
 #### 1. 使用service principal in Azure
 Azure CLI
 ```markdown
-
-```Azure CLI
 az ad sp create-for-rbac --name "myApp" --role contributor \
 --scopes /subscriptions/<subscription-id>/resourceGroups/<group-name>/providers/Microsoft.Web/sites/<app-name> \
 --sdk-auth
-```
 ```
 
 > output(下方json全部貼到secrets中)
@@ -32,6 +29,7 @@ az ad sp create-for-rbac --name "myApp" --role contributor \
   "managementEndpointUrl": "https://management.core.windows.net/"
 }
 ```
+
 > gitAction workflow寫法yaml, 加上login & logout
 ```yaml
 # 設定
